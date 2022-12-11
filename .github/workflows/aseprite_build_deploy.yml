@@ -1,6 +1,12 @@
 name: Build and deploy Aseprite
 
-on: [push]
+on:
+  push: 
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
 
 env:
   BUILD_TYPE: Release
